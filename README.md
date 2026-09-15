@@ -1,3 +1,5 @@
+<img width="1919" height="911" alt="Screenshot_5" src="https://github.com/user-attachments/assets/62e87f3b-6df0-4acc-8d1d-82e27c9bb0e7" />
+
 # Weather React App
 
 A full-stack weather application built with React and Express. It fetches real-time weather data, air quality metrics, and forecasts using WeatherAPI.
@@ -11,36 +13,25 @@ A full-stack weather application built with React and Express. It fetches real-t
 
 ## Tech Stack
 
-- **Frontend:** React, Vite, CSS
-- **Backend:** Node.js, Express, `express-rate-limit`, `dotenv`, `cors`
+- Frontend: React, Vite, CSS
+- Backend: Node.js, Express, express-rate-limit, dotenv, cors
 
-## Getting Started
+## Setup and Run
 
-### Prerequisites
+1. Clone the repository:
 
-- Node.js (v18 or higher)
-- API key from [WeatherAPI.com](https://www.weatherapi.com/)
+git clone [https://github.com/alexmods40-dev/weather-react-app.git](https://github.com/alexmods40-dev/weather-react-app.git)
+cd weather-react-app
 
-### Installation & Run
+2.
+# Terminal 1 - Backend
+cd backend
+npm install
 
-1. **Clone the repository:**
+# Create .env file with your API key: API=your_weather_api_key_here
+node main.js
 
-   git clone [https://github.com/alexmods40-dev/weather-react-app.git](https://github.com/alexmods40-dev/weather-react-app.git)
-   cd weather-react-app
-
-   Backend setup:
-   cd backend
-   npm install
-   Create a .env file in the backend directory: API=your_weather_api_key_here
-
-   Run the backend server:
-   node main.js
-   Server will start on http://localhost:3000.
-
-   Frontend setup:
-   cd frontend/Weather-react-app
-   npm install
-   npm run dev
-   Open http://localhost:5173 in your browser.
-
-
+# Terminal 2 - Frontend
+cd frontend/Weather-react-app
+npm install
+npm run dev
