@@ -1,4 +1,4 @@
-<img width="1280" height="720" alt="Screenshot_5" src="https://github.com/user-attachments/assets/62e87f3b-6df0-4acc-8d1d-82e27c9bb0e7" />
+<img width="1919" height="911" alt="Screenshot_5" src="https://github.com/user-attachments/assets/365fb1ff-aa74-4da0-9201-dda77f2f0a62" />
 
 # Weather React App
 
