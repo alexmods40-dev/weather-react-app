@@ -1,0 +1,14 @@
+.input__container {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.input {
+    flex-grow: 1;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid #ccc;
+    padding-left: 20px;
+    font-size: 18px;
+}

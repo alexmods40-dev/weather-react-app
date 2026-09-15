@@ -1,0 +1,15 @@
+.error__img {
+    width: 50px;
+    height: 50px;
+}
+ 
+.error_text {
+    color: black;
+    margin-top: 13px;
+    margin-left: 10px;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+}

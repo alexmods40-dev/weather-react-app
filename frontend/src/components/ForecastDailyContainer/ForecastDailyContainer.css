@@ -1,0 +1,7 @@
+.forecast__container, 
+.forecast__hourly__container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 5px;
+}

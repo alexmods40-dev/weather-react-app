@@ -1,0 +1,20 @@
+.btn__submit {
+    padding: 0 30px;
+    height: 50px;
+    border-radius: 15px;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: 3px solid rgb(219, 217, 217);
+    color: black;
+}
+ 
+.btn__submit:hover {
+    background-color: #25a53062;
+    border: 3px solid black;
+}
+ 
+.btn__submit:disabled {
+    background-color: #c5084162;
+    cursor: not-allowed;
+}

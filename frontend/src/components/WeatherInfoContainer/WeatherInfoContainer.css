@@ -1,0 +1,154 @@
+.weather__info {
+    background-color: white;
+    border: 1px solid #dbe1e8;
+    border-radius: 30px;
+    padding: 30px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    color: black;
+}
+ 
+ 
+.city-name {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: black;
+    text-align: left;
+}
+ 
+ 
+.temp__container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    background: #f0f8ff;
+    padding: 15px;
+    border-radius: 20px;
+    color: black;
+}
+ 
+ 
+.current-temp {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    color: black;
+    margin-right: 75px;
+}
+ 
+ 
+.img {
+    width: 70px;
+    height: 70px;
+}
+ 
+ 
+.condition {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+    font-style: italic;
+    color: black;
+    text-align: left;
+}
+ 
+ 
+.air-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: left;
+}
+ 
+ 
+.air__Quality {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    padding: 15px 0;
+    list-style: none;
+}
+ 
+ 
+.air__Quality li {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    border: 1px solid #eee;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+ 
+.air__Quality li.good {
+    border: 3px solid #099104;
+    background-color: #0db8075d;;
+}
+ 
+.air__Quality li.average {
+    border: 3px solid #e7d105;
+    background-color: #cfcc0c4b;;
+}
+ 
+.air__Quality li.poor {
+    border: 3px solid #c51212;
+    background-color: #c40e0e4f;
+}
+ 
+.air__Quality li:hover {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+
+[data-tooltip] { position: relative; cursor: help; }
+
+[data-tooltip]::before, [data-tooltip]::after {
+  position: absolute; 
+  opacity: 0; 
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  pointer-events: none; z-index: 1000;
+}
+
+[data-tooltip]::before {
+  content: attr(data-tooltip);
+  background: rgba(69, 69, 69, 1);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  max-width: 363px;
+  width: max-content;
+  text-align: center;
+  font-size: 14px;
+}
+
+[data-tooltip]::after { content: ""; border: 8px solid transparent; }
+
+/* Positions */
+[data-direction="top"]::before, [data-direction="top"]::after { left: 50%; bottom: 100%; transform: translateX(-50%) translateY(10px); }
+[data-direction="top"]::after { border-top-color: rgba(69, 69, 69, 1); margin-bottom: -4px; }
+[data-direction="top"]::before { margin-bottom: 12px; }
+
+[data-direction="bottom"]::before, [data-direction="bottom"]::after { left: 50%; top: 100%; transform: translateX(-50%) translateY(-10px); }
+[data-direction="bottom"]::after { border-bottom-color: rgba(69, 69, 69, 1); margin-top: -4px; }
+[data-direction="bottom"]::before { margin-top: 12px; }
+
+[data-direction="left"]::before, [data-direction="left"]::after { top: 50%; right: 100%; transform: translateY(-50%) translateX(10px); }
+[data-direction="left"]::after { border-left-color: rgba(69, 69, 69, 1); margin-right: -4px; }
+[data-direction="left"]::before { margin-right: 12px; }
+
+[data-direction="right"]::before, [data-direction="right"]::after { top: 50%; left: 100%; transform: translateY(-50%) translateX(-10px); }
+[data-direction="right"]::after { border-right-color: rgba(69, 69, 69, 1); margin-left: -4px; }
+[data-direction="right"]::before { margin-left: 12px; }
+
+/* Trigger */
+[data-tooltip]:hover::before, [data-tooltip]:hover::after { opacity: 1; visibility: visible; }
+[data-direction="top"]:hover::before, [data-direction="top"]:hover::after,
+[data-direction="bottom"]:hover::before, [data-direction="bottom"]:hover::after { transform: translateX(-50%) translateY(0); }
+[data-direction="left"]:hover::before, [data-direction="left"]:hover::after,
+[data-direction="right"]:hover::before, [data-direction="right"]:hover::after { transform: translateY(-50%) translateX(0); }

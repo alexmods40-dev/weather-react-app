@@ -1,0 +1,30 @@
+.footer__container {
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    width: 44%;
+    height: 10%;
+    justify-content: center;
+    background-color: white;
+    border: 3px solid rgb(219, 217, 217);
+    border-radius: 15px;
+}
+
+
+.image {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    white-space: nowrap;
+}
+
+.text {
+    font-size: larger;
+    color: #000;
+}
+
+.text a {
+    font-size: larger;
+    color: #139607;
+    text-decoration: none;
+}

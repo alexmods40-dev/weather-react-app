@@ -1,0 +1,28 @@
+.forescast {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    background-color: #fff9f0;
+}
+ 
+.forescast p {
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+ 
+ 
+.forecast__container, 
+.forecast__hourly__container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 5px;
+}
+ 
+.forecast__hourly__container {
+    width: 100%;
+    max-width: 273px;
+}
