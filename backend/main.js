@@ -7,7 +7,10 @@ import { rateLimit } from 'express-rate-limit'
 import cors from 'cors'
 
 
-
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://alexmods40-dev.github.io',
+];
 
 const limiter = rateLimit({
 	windowMs: 1 * 60 * 1000,
@@ -20,7 +23,12 @@ config();
 const app = express();
 const PORT = 3000;
 app.use(limiter);
-app.use(cors());
+app.use(cors({
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) callback(null, true);
+    else callback(new Error('Not allowed by CORS'));
+  },
+}));
 export const key = process.env.API;
 
 app.get('/weather/:id', async (req, res) => {
