@@ -13,25 +13,51 @@ A full-stack weather application built with React and Express. It fetches real-t
 
 ## Tech Stack
 
-- Frontend: React, Vite, CSS
-- Backend: Node.js, Express, express-rate-limit, dotenv, cors
+| Category | Technologies |
+|---|---|
+| Frontend | React, Vite, CSS |
+| Backend | Node.js, Express, express-rate-limit, dotenv, cors |
 
 ## Setup and Run
 
+### Prerequisites
+
+- Node.js and npm installed
+- API key from [WeatherAPI](https://www.weatherapi.com/)
+
+### Installation
+
 1. Clone the repository:
 
-git clone [https://github.com/alexmods40-dev/weather-react-app.git](https://github.com/alexmods40-dev/weather-react-app.git)
-cd weather-react-app
+   ```bash
+   git clone https://github.com/alexmods40-dev/weather-react-app.git
+   cd weather-react-app
+   ```
 
-2.
-Terminal 1 - Backend
-cd backend
-npm install
+2. Set up the backend (Terminal 1):
 
-Create .env file with your API key: API=your_weather_api_key_here
-node main.js
+   ```bash
+   cd backend
+   npm install
+   ```
 
-Terminal 2 - Frontend
-cd frontend/Weather-react-app
-npm install
-npm run dev
+   Create a `.env` file inside the `backend` folder with your API key:
+
+   ```env
+   API=your_weather_api_key_here
+   ```
+
+   Start the backend server:
+
+   ```bash
+   node main.js
+   ```
+
+3. Set up the frontend (Terminal 2):
+
+   ```bash
+   cd frontend/Weather-react-app
+   npm install
+   npm run dev
+   ```
+
